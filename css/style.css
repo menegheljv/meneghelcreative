@@ -95,6 +95,7 @@ h1, h2, h3{
 h1{ font-size: clamp(2.6rem, 7vw, 5.2rem); }
 h2{ font-size: clamp(1.8rem, 4vw, 2.9rem); margin-bottom: 18px; }
 h3{ font-size: 1.3rem; margin-bottom: 14px; }
+.pink{ color: var(--pink); }
 
 .section-sub{
   color: var(--muted);
@@ -247,13 +248,13 @@ h3{ font-size: 1.3rem; margin-bottom: 14px; }
   color: #ffffff;
   display: inline-block;
   cursor: default;
-  text-shadow: 0 0 10px rgba(255,255,255,0.3);
+  text-shadow: 0 0 18px rgba(255,255,255,0.55), 0 0 40px rgba(255,255,255,0.25);
 }
 .hero h1 span::before{
   content: "momento";
   position: absolute;
   inset: 0;
-  background-image: linear-gradient(100deg, transparent 30%, rgba(255,255,255,0.95) 48%, transparent 66%);
+  background-image: linear-gradient(100deg, transparent 20%, rgba(255,255,255,1) 48%, transparent 76%);
   background-size: 300% 100%;
   background-position: 150% 0;
   -webkit-background-clip: text;
@@ -416,8 +417,10 @@ h3{ font-size: 1.3rem; margin-bottom: 14px; }
   margin-top: 48px;
 }
 .trajetoria-block{
-  border-top: 1px solid var(--line);
-  padding-top: 22px;
+  padding: 26px 24px;
+  border-radius: var(--radius);
+  border: 1px solid rgba(255,103,138,0.35);
+  background: radial-gradient(120% 140% at 15% 0%, var(--pink-dim), transparent 55%), var(--bg-alt);
 }
 .trajetoria-block .eyebrow{
   color: var(--pink);
