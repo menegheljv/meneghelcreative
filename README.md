@@ -1,41 +1,42 @@
-# Meneghel Creative — site
+# Olá, eu sou o João 👋
 
-Site institucional + portfólio pessoal, em HTML/CSS/JS puro (sem frameworks, sem custo de hospedagem).
+**Compliance & AI Governance · Political Communication · Founder @ Meneghel Creative**
 
-## Estrutura
+I build public-sector communication people actually want to watch — and, on the side, cinematic coverage for the events that matter most to people.
+
+## About
+
+I'm a Strategic Advisor at **Anchieta City Hall** (Espírito Santo, Brazil), where I sit at the intersection of public administration and modern, high-impact communication — producing content for official digital channels, supporting contract compliance and monitoring, and using storytelling to make institutional communication feel human. Channels I've contributed to have crossed **10M+ organic views**; a zero-paid-media environmental campaign I led reached **180,000+ people** on its own.
+
+Before that, I was Marketing Director for the campaign that elected **Hugo Luiz** — at 25, the youngest mayor in Espírito Santo and one of the youngest in Brazil — after years advising his social media as the city's youngest councilman, where a transparency-first strategy I helped drive got a bill passed mandating the digital broadcast of plenary sessions.
+
+In 2021 I founded **[Meneghel Creative](https://meneghelcreative.github.io/meneghelcreative/)**, an independent creative practice that has grown from political communication and social strategy into a multidisciplinary studio — including a boutique line producing cinematic, emotion-driven event coverage (weddings, birthdays, milestones).
+
+I also founded **Check Step Flow**, a media and information literacy project submitted to the UNESCO Global Youth Hackathon 2026 — a full media ecosystem (podcast, YouTube channel, a site I coded and deployed on GitHub Pages, and an institutional LinkedIn page) that teaches audiences to read the economic incentive behind algorithmically recommended content.
+
+Studying Advertising & Public Relations at UVV, after a technical degree in Administration from Ifes. English C1 (EF SET 66/100), professional working Spanish.
+
+Open to international opportunities in communication, social media strategy, and public affairs — if your team is building something worth telling people about, let's talk.
+
+## Connect
+
+- 🌊 **Meneghel Creative** — [meneghelcreative.github.io/meneghelcreative](https://meneghelcreative.github.io/meneghelcreative/)
+- 📸 **Instagram** — [@meneghelcreative](https://instagram.com/meneghelcreative)
+- 💼 **LinkedIn** — [/in/joaovictormeneghel](https://www.linkedin.com/in/joaovictormeneghel/)
+- ✉️ **E-mail** — joaovictorpmeneghel@gmail.com
+- 💬 **WhatsApp** — [(27) 99810-2406](https://wa.me/5527998102406)
+
+---
+
+## Sobre este repositório
+
+Este repositório também é o código-fonte do site institucional da **Meneghel Creative** (HTML/CSS/JS puro, sem frameworks), publicado via GitHub Pages.
 
 ```
-index.html          → página única com todas as seções
-css/style.css        → estilos
-js/script.js         → menu mobile e ano dinâmico no rodapé
-assets/               → logotipo, ícone e favicons extraídos da identidade visual
+index.html      → página única com todas as seções
+css/style.css   → estilos
+js/script.js    → menu mobile, animações e interações
+assets/         → logotipo, ícones, favicons e fotos
 ```
 
-## Como publicar gratuitamente no GitHub Pages
-
-1. Crie uma conta no [GitHub](https://github.com) (se ainda não tiver).
-2. Crie um novo repositório, por exemplo `meneghel-site` (pode ser público).
-3. Faça upload de todos os arquivos desta pasta para o repositório (pelo site do GitHub: "Add file" → "Upload files", ou via `git`).
-4. No repositório, vá em **Settings → Pages**.
-5. Em "Source", selecione a branch `main` e a pasta `/ (root)`. Salve.
-6. Em alguns minutos o site estará disponível em:
-   `https://SEU-USUARIO.github.io/meneghel-site/`
-7. (Opcional) Se tiver um domínio próprio, pode configurá-lo em **Settings → Pages → Custom domain**.
-
-## Como editar o conteúdo
-
-- **Textos**: edite diretamente o arquivo `index.html` (todo o conteúdo de cada seção está em português, fácil de localizar por `id` — `#sobre`, `#servicos`, `#portfolio`, `#contato`).
-- **Cores/estilo**: as cores principais estão centralizadas no topo do arquivo `css/style.css`, dentro de `:root`.
-- **Contato**: o WhatsApp usa o link `https://wa.me/5527998102406` — troque o número ali e no rodapé se mudar.
-- **Portfólio**: hoje o botão da seção "Portfólio" leva direto para o Instagram (@meneghelcreative). Quando quiser montar uma galeria própria no site, é só me pedir.
-
-## Rodar localmente antes de publicar
-
-Não é obrigatório, mas se quiser conferir antes:
-
-```bash
-cd meneghel-site
-python3 -m http.server 8000
-```
-
-Depois acesse `http://localhost:8000` no navegador.
+Publicado automaticamente em **[meneghelcreative.github.io/meneghelcreative](https://meneghelcreative.github.io/meneghelcreative/)** a cada push na branch `main`.
