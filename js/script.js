@@ -101,14 +101,9 @@ function initHeroWaveAnim() {
       return (f1 + f2 + f3) * 0.4 * env;
     },
     luz: (u, t) => Math.sin(u * Math.PI * 3 + t * 1.4) * 0.85,
-    calcadao: (u) => Math.sin(u * Math.PI * 2) * 0.72,
-    simbolo: (u) => {
-      const x = u * 4;
-      const seg = Math.max(0, Math.min(3, Math.floor(x)));
-      const hx = x % 2;
-      const val = -(hx * hx) + 2 * hx;
-      return (val * 2 - 1) * 0.92;
-    },
+    calcadao: (u) => Math.sin(u * Math.PI * 2) * 0.7,
+    // onda suave de dois picos (sem quinas), a mesma curva do símbolo real
+    simbolo: (u) => -Math.cos(u * 2 * Math.PI) * 0.55 - Math.cos(u * 4 * Math.PI) * 0.35,
   };
 
   const pink = [255, 103, 138];
@@ -174,19 +169,24 @@ function initHeroWaveAnim() {
     }
 
     if (isStriped) {
-      // calçadão: faixa grossa com trechos alternando branco e preto
-      const stepPx = Math.max(8, w * 0.028);
-      ctx.lineJoin = "round";
-      ctx.lineCap = "round";
-      ctx.lineWidth = h * 0.16;
-      for (let i = 0; i < pts.length - 1; i++) {
-        const bucket = Math.floor(pts[i].x / stepPx);
-        ctx.strokeStyle = bucket % 2 === 0 ? "#f5f5f5" : "#0a0a0a";
-        ctx.beginPath();
-        ctx.moveTo(pts[i].x, pts[i].y);
-        ctx.lineTo(pts[i + 1].x, pts[i + 1].y);
-        ctx.stroke();
+      // calçadão: recorta uma faixa que segue a onda e pinta mosaico preto/branco por dentro,
+      // em vez de trechos de linha soltos (que ficavam com cara de cobra)
+      const thick = h * 0.17;
+      ctx.save();
+      ctx.beginPath();
+      pts.forEach((p, i) => (i === 0 ? ctx.moveTo(p.x, p.y - thick / 2) : ctx.lineTo(p.x, p.y - thick / 2)));
+      for (let i = pts.length - 1; i >= 0; i--) ctx.lineTo(pts[i].x, pts[i].y + thick / 2);
+      ctx.closePath();
+      ctx.clip();
+
+      ctx.fillStyle = "#f5f5f5";
+      ctx.fillRect(0, 0, w, h);
+      const stepPx = Math.max(9, w * 0.032);
+      ctx.fillStyle = "#0a0a0a";
+      for (let x = 0; x < w; x += stepPx * 2) {
+        ctx.fillRect(x, 0, stepPx, h);
       }
+      ctx.restore();
     } else {
       ctx.beginPath();
       pts.forEach((p, i) => (i === 0 ? ctx.moveTo(p.x, p.y) : ctx.lineTo(p.x, p.y)));
