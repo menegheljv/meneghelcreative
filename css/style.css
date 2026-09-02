@@ -6,22 +6,27 @@
 :root{
   --bg: #0a0a0a;
   --bg-alt: #121212;
+  --bg-raise: #161616;
   --line: rgba(255,255,255,0.12);
+  --line-soft: rgba(245,245,245,0.07);
   --white: #f5f5f5;
   --muted: rgba(245,245,245,0.65);
   --muted-2: rgba(245,245,245,0.45);
   --accent: #ffffff;
   --pink: #ff678a;
+  --pink-dim: rgba(255,103,138,0.16);
+  --on-pink: #1a0509;
   --radius: 14px;
   --max-w: 1120px;
   --font-display: 'Anton', sans-serif;
   --font-brand: 'Bricolage Grotesque', sans-serif;
   --font-body: 'Bricolage Grotesque', sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
 }
 
 *{ box-sizing: border-box; margin:0; padding:0; }
 
-html{ scroll-behavior: smooth; }
+html{ scroll-behavior: smooth; overflow-x: hidden; }
 
 body{
   background: var(--bg);
@@ -30,6 +35,7 @@ body{
   font-weight: 400;
   line-height: 1.55;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 /* ---------- Sombra do cursor ---------- */
@@ -588,6 +594,30 @@ h3{ font-size: 1.3rem; margin-bottom: 14px; }
   font-size: 0.85rem;
 }
 .footer-icon{ height: 16px; width: auto; opacity: 0.6; }
+
+/* ---------- Eco do símbolo (elemento gráfico do design system) ----------
+   Uma curva do símbolo, ampliada e quase invisível, sangrando por um
+   canto — nunca por cima de texto. Textura de fundo documentada no
+   sistema de marca. */
+.symbol-echo{
+  position: fixed;
+  right: -14vw;
+  bottom: -18vw;
+  width: 58vw;
+  max-width: 780px;
+  aspect-ratio: 2230 / 951;
+  background-image: url("../assets/meneghel-wave-icon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.035;
+  pointer-events: none;
+  z-index: 0;
+  transform: rotate(-8deg);
+}
+@media (max-width: 720px){
+  .symbol-echo{ width: 90vw; right: -20vw; bottom: -12vw; }
+}
 
 /* ---------- Noise overlay (subtle texture, matches catalog look) ---------- */
 .noise-overlay{
