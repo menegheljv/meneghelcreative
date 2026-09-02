@@ -154,9 +154,8 @@ h3{ font-size: 1.3rem; margin-bottom: 14px; }
 .brand-word{ height: 28px; width: auto; display: block; }
 .brand-tagline{
   position: absolute;
-  top: 100%;
+  top: 76%;
   left: 58%;
-  margin-top: 2px;
   font-family: var(--font-brand);
   font-weight: 200;
   font-size: 0.68rem;
