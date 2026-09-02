@@ -20,7 +20,7 @@ I'm a Strategic Advisor at **Anchieta City Hall** (Espírito Santo, Brazil), whe
 
 Before that, I was Marketing Director for the campaign that elected **Hugo Luiz** — at 25, the youngest mayor in Espírito Santo and one of the youngest in Brazil — after years advising his social media as the city's youngest councilman, where a transparency-first, data-backed strategy I helped drive got a bill passed mandating the digital broadcast of plenary sessions.
 
-I also founded **Check Step Flow**, a media and information literacy project submitted to the UNESCO Global Youth Hackathon 2026 — a full media ecosystem (podcast, YouTube channel, a site I coded and deployed on GitHub Pages, and an institutional LinkedIn page) that teaches audiences to read the economic incentive behind algorithmically recommended content.
+I also founded **[Check Step Flow](https://github.com/checkstepflow/Check-Step-Flow)**, a media and information literacy project submitted to the UNESCO Global Youth Hackathon 2026 — a full media ecosystem (podcast, YouTube channel, a site I coded and deployed on GitHub Pages, and an institutional LinkedIn page) that teaches audiences to read the economic incentive behind algorithmically recommended content.
 
 Studying Advertising & Public Relations at UVV, after a technical degree in Administration from Ifes. English C1 (EF SET 66/100), professional working Spanish. Currently building out SQL, data visualization and analytics skills to go with the storytelling side.
 
