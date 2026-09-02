@@ -12,7 +12,7 @@ I turn public data and audience data into decisions — and I've done it at real
 
 ## 📊 Featured project
 
-**[alfredo-chaves-eleicoes-2020-2024](https://github.com/meneghelcreative/alfredo-chaves-eleicoes-2020-2024)** — a full data pipeline (Python, pandas, SQLite, matplotlib) built on official TSE electoral data, mapping section-by-section how a political group went from losing five elections in a row to winning in 2024. Raw voting records → cleaned datasets → a published case-study report. This is the project I'm proudest of: it's the same instinct I use in communications work — find the story inside the data — applied with real code.
+**[alfredo-chaves-eleicoes-2020-2024](https://github.com/menegheljv/alfredo-chaves-eleicoes-2020-2024)** — a full data pipeline (Python, pandas, SQLite, matplotlib) built on official TSE electoral data, mapping section-by-section how a political group went from losing five elections in a row to winning in 2024. Raw voting records → cleaned datasets → a published case-study report. This is the project I'm proudest of: it's the same instinct I use in communications work — find the story inside the data — applied with real code.
 
 ## About
 
@@ -24,7 +24,7 @@ I also founded **Check Step Flow**, a media and information literacy project sub
 
 Studying Advertising & Public Relations at UVV, after a technical degree in Administration from Ifes. English C1 (EF SET 66/100), professional working Spanish. Currently building out SQL, data visualization and analytics skills to go with the storytelling side.
 
-Alongside all of this, I founded **[Meneghel Creative](https://meneghelcreative.github.io/meneghelcreative/)** in 2021 — starting in political communication, later adding a boutique line producing event coverage.
+Alongside all of this, I founded **[Meneghel Creative](https://menegheljv.github.io/meneghelcreative/)** in 2021 — starting in political communication, later adding a boutique line producing event coverage.
 
 **Open to full-time, remote, international roles in growth, data analytics and communications.**
 
@@ -32,7 +32,7 @@ Alongside all of this, I founded **[Meneghel Creative](https://meneghelcreative.
 
 - 💼 **LinkedIn** — [/in/joaovictormeneghel](https://www.linkedin.com/in/joaovictormeneghel/)
 - ✉️ **E-mail** — joaovictorpmeneghel@gmail.com
-- 🌊 **Meneghel Creative** — [meneghelcreative.github.io/meneghelcreative](https://meneghelcreative.github.io/meneghelcreative/)
+- 🌊 **Meneghel Creative** — [menegheljv.github.io/meneghelcreative](https://menegheljv.github.io/meneghelcreative/)
 - 📸 **Instagram** — [@meneghelcreative](https://instagram.com/meneghelcreative)
 
 ---
@@ -48,4 +48,4 @@ js/script.js    → menu mobile, animações e interações
 assets/         → logotipo, ícones, favicons e fotos
 ```
 
-Publicado automaticamente em **[meneghelcreative.github.io/meneghelcreative](https://meneghelcreative.github.io/meneghelcreative/)** a cada push na branch `main`.
+Publicado automaticamente em **[menegheljv.github.io/meneghelcreative](https://menegheljv.github.io/meneghelcreative/)** a cada push na branch `main`.
