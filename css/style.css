@@ -57,8 +57,30 @@ body{
   will-change: transform;
 }
 .cursor-glow.is-active{ opacity: 0.9; }
+
+.cursor-dot{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  pointer-events: none;
+  background: var(--white);
+  box-shadow: 0 0 6px 1px rgba(255,255,255,0.8);
+  transform: translate(-50%, -50%);
+  z-index: 10000;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  will-change: transform;
+}
+.cursor-dot.is-active{ opacity: 1; }
+
 @media (prefers-reduced-motion: reduce){
-  .cursor-glow{ display: none; }
+  .cursor-glow, .cursor-dot{ display: none; }
+}
+@media (pointer: coarse){
+  .cursor-glow, .cursor-dot{ display: none; }
 }
 
 img{ max-width: 100%; display:block; }
@@ -155,13 +177,13 @@ h3{ font-size: 1.3rem; margin-bottom: 14px; }
 .brand-word{ height: 41px; width: auto; display: block; }
 .brand-tagline{
   position: absolute;
-  top: 76%;
+  top: 78%;
   left: 70%;
   font-family: var(--font-brand);
   font-weight: 200;
-  font-size: 1rem;
+  font-size: 0.6rem;
   text-transform: lowercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   color: var(--muted-2);
   white-space: nowrap;
 }
@@ -304,7 +326,7 @@ h3{ font-size: 1.3rem; margin-bottom: 14px; }
 }
 
 .hero-sub{
-  color: var(--pink);
+  color: var(--white);
   font-size: 1.08rem;
   max-width: 520px;
   margin: 26px 0 38px;
