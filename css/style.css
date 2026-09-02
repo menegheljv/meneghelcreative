@@ -47,7 +47,7 @@ body{
   height: 260px;
   border-radius: 50%;
   pointer-events: none;
-  background: radial-gradient(circle, rgba(255,255,255,0.45) 0%, rgba(255,255,255,0.18) 22%, rgba(255,255,255,0.06) 45%, rgba(255,255,255,0) 72%);
+  background: radial-gradient(circle, rgba(255,103,138,0.22) 0%, rgba(255,103,138,0.09) 22%, rgba(255,103,138,0.03) 45%, rgba(255,103,138,0) 72%);
   filter: blur(16px);
   transform: translate(-50%, -50%);
   z-index: 9999;
@@ -56,7 +56,7 @@ body{
   transition: opacity 0.4s ease;
   will-change: transform;
 }
-.cursor-glow.is-active{ opacity: 0.8; }
+.cursor-glow.is-active{ opacity: 0.5; }
 @media (prefers-reduced-motion: reduce){
   .cursor-glow{ display: none; }
 }
@@ -139,26 +139,26 @@ h3{ font-size: 1.3rem; margin-bottom: 14px; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 92px;
+  height: 116px;
 }
 .brand{
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 14px;
 }
-.brand-icon{ height: 44px; width: auto; }
+.brand-icon{ height: 58px; width: auto; }
 .brand-wordmark{
   position: relative;
   display: inline-block;
 }
-.brand-word{ height: 28px; width: auto; display: block; }
+.brand-word{ height: 41px; width: auto; display: block; }
 .brand-tagline{
   position: absolute;
   top: 76%;
   left: 58%;
   font-family: var(--font-brand);
   font-weight: 200;
-  font-size: 0.68rem;
+  font-size: 1rem;
   text-transform: lowercase;
   letter-spacing: 0.1em;
   color: var(--muted-2);
@@ -390,6 +390,25 @@ h3{ font-size: 1.3rem; margin-bottom: 14px; }
   padding: 100px 0;
   border-bottom: 1px solid var(--line);
 }
+.pink-quote{
+  margin-top: 48px;
+  padding: clamp(26px, 5vw, 44px);
+  border-radius: var(--radius);
+  border: 1px solid rgba(255,103,138,0.35);
+  background: radial-gradient(120% 140% at 15% 0%, var(--pink-dim), transparent 55%), var(--bg-alt);
+  text-align: center;
+}
+.pink-quote p{
+  margin: 0;
+  font-family: var(--font-brand);
+  font-weight: 300;
+  font-size: clamp(1.1rem, 2.4vw, 1.4rem);
+  line-height: 1.4;
+}
+.pink-quote strong{
+  color: var(--pink);
+  font-weight: 600;
+}
 .trajetoria-grid{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -619,13 +638,26 @@ h3{ font-size: 1.3rem; margin-bottom: 14px; }
 }
 .footer-inner{
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 12px;
+  gap: 10px;
   color: var(--muted-2);
   font-size: 0.85rem;
 }
+.footer-top{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
 .footer-icon{ height: 16px; width: auto; opacity: 0.6; }
+.footer-slogan{
+  font-size: 0.78rem;
+  color: var(--muted-2);
+  opacity: 0.75;
+  max-width: 540px;
+  text-align: center;
+}
 
 /* ---------- Eco do símbolo (elemento gráfico do design system) ----------
    Uma curva do símbolo, ampliada e quase invisível, sangrando por um
@@ -691,7 +723,7 @@ h3{ font-size: 1.3rem; margin-bottom: 14px; }
 @media (max-width: 720px){
   .main-nav{
     position: fixed;
-    top: 76px;
+    top: 96px;
     left: 0;
     right: 0;
     z-index: 60;
@@ -721,7 +753,9 @@ h3{ font-size: 1.3rem; margin-bottom: 14px; }
     padding: 14px 0;
   }
   .nav-toggle{ display: flex; }
-  .header-inner{ height: 76px; }
+  .header-inner{ height: 96px; }
+  .brand-icon{ height: 48px; }
+  .brand-word{ height: 34px; }
   .hero{ padding: 90px 0 60px; }
   .sobre, .servicos, .portfolio, .contato{ padding: 70px 0; }
   .contato-link{ min-width: 0; width: 100%; }
@@ -729,8 +763,9 @@ h3{ font-size: 1.3rem; margin-bottom: 14px; }
 }
 
 @media (max-width: 480px){
-  .brand-icon{ height: 34px; }
-  .brand-word{ height: 21px; }
+  .header-inner{ height: 84px; }
+  .brand-icon{ height: 40px; }
+  .brand-word{ height: 28px; }
   .hero-wave{ width: clamp(160px, 46vw, 260px); }
   .service-card{ padding: 28px 22px; }
   .contato-link{ padding: 22px 24px; }
