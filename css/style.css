@@ -743,6 +743,7 @@ h3{ font-size: 1.3rem; margin-bottom: 14px; }
   .sobre-grid{ grid-template-columns: 1fr; gap: 34px; }
   .sobre-frame{ aspect-ratio: 16/9; }
   .services-grid{ grid-template-columns: 1fr; }
+  .trajetoria-grid{ grid-template-columns: 1fr; gap: 18px; margin-top: 36px; }
 }
 
 @media (max-width: 720px){
