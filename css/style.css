@@ -639,8 +639,10 @@ h3{ font-size: 1.3rem; margin-bottom: 14px; }
 .portfolio-inner .eyebrow{ justify-content: center; }
 
 /* ---------- Contato ---------- */
-.contato{ padding: 100px 0; background: var(--bg-alt); }
+.contato{ padding: 100px 0; background: #ffffff; color: #0a0a0a; }
 .contato-inner{ text-align: center; }
+.contato .eyebrow{ color: rgba(10,10,10,0.55); }
+.contato .section-sub{ color: rgba(10,10,10,0.6); }
 .contato-links{
   display: flex;
   flex-wrap: wrap;
@@ -655,14 +657,15 @@ h3{ font-size: 1.3rem; margin-bottom: 14px; }
   gap: 6px;
   padding: 26px 34px;
   background: #ffffff;
-  border: 1px solid rgba(10,10,10,0.1);
+  border: 1px solid rgba(10,10,10,0.12);
   border-radius: var(--radius);
   min-width: 220px;
+  box-shadow: 0 6px 20px rgba(10,10,10,0.06);
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 .contato-link:hover{
   transform: translateY(-3px);
-  box-shadow: 0 12px 24px rgba(0,0,0,0.35);
+  box-shadow: 0 12px 24px rgba(10,10,10,0.16);
 }
 .contato-icon{
   color: #0a0a0a;
@@ -709,11 +712,12 @@ h3{ font-size: 1.3rem; margin-bottom: 14px; }
 }
 
 /* ---------- Eco do símbolo (elemento gráfico do design system) ----------
-   Uma curva do símbolo, ampliada e quase invisível, sangrando por um
-   canto — nunca por cima de texto. Textura de fundo documentada no
-   sistema de marca. */
+   Uma curva do símbolo, ampliada e quase invisível, sangrando pelo
+   canto do rodapé — nunca por cima de texto, e só ali (não fixo na
+   tela toda) pra não atrapalhar o resto da navegação. */
+.site-footer{ position: relative; overflow: hidden; }
 .symbol-echo{
-  position: fixed;
+  position: absolute;
   right: -14vw;
   bottom: -18vw;
   width: 58vw;
@@ -723,7 +727,7 @@ h3{ font-size: 1.3rem; margin-bottom: 14px; }
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.035;
+  opacity: 0.02;
   pointer-events: none;
   z-index: 0;
   transform: rotate(-8deg);
@@ -731,6 +735,7 @@ h3{ font-size: 1.3rem; margin-bottom: 14px; }
 @media (max-width: 720px){
   .symbol-echo{ width: 90vw; right: -20vw; bottom: -12vw; }
 }
+
 
 /* ---------- Noise overlay (subtle texture, matches catalog look) ---------- */
 .noise-overlay{
@@ -766,7 +771,7 @@ h3{ font-size: 1.3rem; margin-bottom: 14px; }
 /* ---------- Responsive ---------- */
 @media (max-width: 860px){
   .sobre-grid{ grid-template-columns: 1fr; gap: 34px; }
-  .sobre-frame{ aspect-ratio: 16/9; }
+  .sobre-frame{ aspect-ratio: 4/5; }
   .services-grid{ grid-template-columns: 1fr; }
   .trajetoria-grid{ grid-template-columns: 1fr; gap: 18px; margin-top: 36px; }
 }

@@ -384,6 +384,12 @@
     .type-row{ grid-template-columns:1fr; gap:10px; }
     .specimen-cards{ grid-template-columns:1fr; }
   }
+  @media (max-width:560px){
+    .colorway-pair, .ghost-grid, .card-pair, .dont-grid{ grid-template-columns:1fr; }
+    .trait-list li{ grid-template-columns:1fr; gap:6px; }
+    .cover-meta{ gap:24px; }
+    section{ padding-block:clamp(48px,10vw,80px); }
+  }
   @media (prefers-reduced-motion:reduce){ .btn{ transition:none; } }
 
   /* ---------- onda section (som, luz e o infinito) ---------- */
@@ -826,7 +832,7 @@
 
       <div class="type-row">
         <div class="label">Título<span class="px">~46px / uppercase</span></div>
-        <div class="type-sample display" style="font-size:clamp(28px,4vw,46px);">O que a Meneghel Creative bota pra rodar</div>
+        <div class="type-sample display" style="font-size:clamp(28px,4vw,46px);">O que a Meneghel Creative bota pra poca</div>
       </div>
       <div class="type-row">
         <div class="label">Nome de pacote<span class="px">~31px / rosa</span></div>
@@ -851,14 +857,14 @@
       </div>
       <ul class="principle-list">
         <li><b>Fala, não anuncia</b>Frases curtas, como quem manda áudio no WhatsApp, não como quem lê um press release.</li>
-        <li><b>Nomeia com carinho</b>Pacotes ganham nome de gente ("Só para baixinhos"), não categoria de planilha ("Pacote Infantil Básico").</li>
-        <li><b>Sotaque capixaba</b>Gírias e expressões regionais ficam: "bota pra rodar" vale mais que "gerenciamos com eficiência".</li>
+        <li><b>Nomeia com carinho</b>Pacotes ganham nome de música ("Lua de Cristal"), não categoria de planilha ("Pacote Infantil Básico").</li>
+        <li><b>Sotaque capixaba</b>Gírias e expressões regionais ficam: "bota pra poca" vale mais que "gerenciamos com eficiência".</li>
         <li><b>Directo no preço</b>Nunca esconde que é sob orçamento, mas também nunca enrola pra chegar no "chama no WhatsApp".</li>
       </ul>
       <div class="voice-grid" style="margin-top:32px;">
         <div class="voice-card yes">
           <span class="tag2">Meneghel fala assim</span>
-          <p class="line">"Vamos nos permitir: 15 anos do jeito que a festa merece."</p>
+          <p class="line">"Como uma Onda: 15 anos do jeito que a festa merece."</p>
         </div>
         <div class="voice-card no">
           <span class="tag2">Não assim</span>
@@ -905,7 +911,7 @@
         <p class="comp-label">Cartão de serviço <span class="spec">fundo invertido · border-radius: <code class="tok">14px</code></span></p>
         <div class="comp-stage">
           <div class="pkg-card">
-            <span class="kicker">Só para baixinhos</span>
+            <span class="kicker">Lua de Cristal</span>
             <div class="name2">Aniversário infantil</div>
             <p class="desc2">Cobertura completa da festa dos pequenos, do primeiro brinde ao último parabéns.</p>
             <ul>
