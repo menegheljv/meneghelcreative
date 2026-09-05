@@ -432,7 +432,11 @@ h3{ font-size: 1.3rem; margin-bottom: 14px; }
 .trajetoria{
   padding: 100px 0;
   border-bottom: 1px solid var(--line);
+  background: #ffffff;
+  color: #0a0a0a;
 }
+.trajetoria .eyebrow{ color: rgba(10,10,10,0.55); }
+.trajetoria .section-sub{ color: rgba(10,10,10,0.6); }
 .pink-quote{
   margin-top: 48px;
   padding: clamp(26px, 5vw, 44px);
