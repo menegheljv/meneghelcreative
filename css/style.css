@@ -170,23 +170,7 @@ h3{ font-size: 1.3rem; margin-bottom: 14px; }
   gap: 14px;
 }
 .brand-icon{ height: 58px; width: auto; }
-.brand-wordmark{
-  position: relative;
-  display: inline-block;
-}
-.brand-word{ height: 41px; width: auto; display: block; }
-.brand-tagline{
-  position: absolute;
-  top: 78%;
-  left: 70%;
-  font-family: var(--font-brand);
-  font-weight: 200;
-  font-size: 0.6rem;
-  text-transform: lowercase;
-  letter-spacing: 0.12em;
-  color: var(--muted-2);
-  white-space: nowrap;
-}
+.brand-word{ height: 63px; width: auto; display: block; }
 
 .main-nav{
   display: flex;
@@ -781,7 +765,7 @@ h3{ font-size: 1.3rem; margin-bottom: 14px; }
   .nav-toggle{ display: flex; }
   .header-inner{ height: 96px; }
   .brand-icon{ height: 48px; }
-  .brand-word{ height: 34px; }
+  .brand-word{ height: 52px; }
   .hero{ padding: 90px 0 60px; }
   .sobre, .servicos, .portfolio, .contato{ padding: 70px 0; }
   .contato-link{ min-width: 0; width: 100%; }
@@ -791,7 +775,7 @@ h3{ font-size: 1.3rem; margin-bottom: 14px; }
 @media (max-width: 480px){
   .header-inner{ height: 84px; }
   .brand-icon{ height: 40px; }
-  .brand-word{ height: 28px; }
+  .brand-word{ height: 43px; }
   .hero-wave{ width: clamp(160px, 46vw, 260px); }
   .service-card{ padding: 28px 22px; }
   .contato-link{ padding: 22px 24px; }
