@@ -68,20 +68,12 @@ document.addEventListener("DOMContentLoaded", () => {
     glow.className = "cursor-glow";
     document.body.appendChild(glow);
 
-    const dot = document.createElement("div");
-    dot.className = "cursor-dot";
-    document.body.appendChild(dot);
-
     document.addEventListener("mousemove", (e) => {
-      const pos = `translate(${e.clientX}px, ${e.clientY}px) translate(-50%, -50%)`;
-      glow.style.transform = pos;
-      dot.style.transform = pos;
+      glow.style.transform = `translate(${e.clientX}px, ${e.clientY}px) translate(-50%, -50%)`;
       glow.classList.add("is-active");
-      dot.classList.add("is-active");
     });
     document.addEventListener("mouseleave", () => {
       glow.classList.remove("is-active");
-      dot.classList.remove("is-active");
     });
   }
 });

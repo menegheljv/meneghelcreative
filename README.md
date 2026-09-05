@@ -16,7 +16,7 @@ I turn public data and audience data into decisions. I've done it at real scale:
 
 ## About
 
-I'm a Strategic Advisor at **Anchieta City Hall** (Espírito Santo, Brazil), where I work at the intersection of public administration and data-informed communication. I produce content for official digital channels, support contract compliance and monitoring, and use performance data to decide what stories to tell. Channels I've contributed to have crossed **10M+ organic views**. A zero-paid-media environmental campaign I led reached **180,000+ people** on its own, built by reading what content actually resonated.
+I'm a Strategic Advisor at **Anchieta City Hall** (Espírito Santo, Brazil), where I work at the intersection of public administration and data-informed communication. I produce content for official digital channels, act as contract inspector for public procurement, and use performance data to decide what stories to tell. I also managed the rollout of an **AI-powered chatbot** for citizen services. Channels I've contributed to have crossed **10M+ organic views**. A zero-paid-media environmental campaign I led reached **180,000+ people** on its own, built by reading what content actually resonated.
 
 Before that, I was Marketing Director for the campaign that elected **Hugo Luiz**, at 25 the youngest mayor in Espírito Santo and one of the youngest in Brazil, after years advising his social media as the city's youngest councilman. A transparency-first, data-backed strategy I helped drive got a bill passed mandating the digital broadcast of plenary sessions.
 
