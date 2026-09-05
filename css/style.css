@@ -476,6 +476,7 @@ h3{ font-size: 1.3rem; margin-bottom: 14px; }
   font-size: 1.15rem;
   line-height: 1.25;
   margin-bottom: 14px;
+  color: var(--white);
 }
 .trajetoria-block p:not(.eyebrow){
   color: var(--muted);
