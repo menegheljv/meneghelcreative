@@ -87,15 +87,6 @@ ul{ list-style: none; }
   margin-bottom: 14px;
 }
 .eyebrow.center, .section-sub.center, h2.center{ text-align: center; }
-.track-tag{
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  color: var(--pink);
-  letter-spacing: 0.02em;
-  margin-top: -8px;
-  margin-bottom: 18px;
-}
-.track-tag.center{ text-align: center; }
 
 h1, h2, h3{
   font-family: var(--font-display);
@@ -490,11 +481,6 @@ h3{ font-size: 1.3rem; margin-bottom: 14px; }
 .trajetoria-block p:not(.eyebrow){
   color: var(--muted);
   font-size: 0.95rem;
-}
-.trajetoria-block .track-tag{
-  color: var(--pink);
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
 }
 .trajetoria-block strong{
   color: var(--white);
