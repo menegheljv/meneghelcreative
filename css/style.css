@@ -94,6 +94,7 @@ h1, h2, h3{
   text-transform: uppercase;
   letter-spacing: 0.01em;
   line-height: 1.05;
+  text-wrap: balance;
 }
 
 h1{ font-size: clamp(2.6rem, 7vw, 5.2rem); }
@@ -109,6 +110,7 @@ h3{ font-size: 1.3rem; margin-bottom: 14px; }
   color: var(--muted);
   max-width: 620px;
   margin-bottom: 44px;
+  text-wrap: balance;
 }
 .section-sub.center{ margin-left: auto; margin-right: auto; }
 
@@ -350,12 +352,14 @@ h3{ font-size: 1.3rem; margin-bottom: 14px; }
 .sobre{
   padding: 100px 0;
   border-bottom: 1px solid var(--line);
+  background: var(--bg-alt);
 }
 .sobre-grid{
   display: grid;
-  grid-template-columns: 0.8fr 1.2fr;
+  grid-template-columns: 1fr 1fr;
   gap: 60px;
   align-items: start;
+  margin-top: 48px;
 }
 .sobre-frame{
   position: relative;
@@ -495,7 +499,6 @@ h3{ font-size: 1.3rem; margin-bottom: 14px; }
 .servicos{
   padding: 100px 0;
   border-bottom: 1px solid var(--line);
-  background: var(--bg-alt);
 }
 .services-grid{
   display: grid;
@@ -637,6 +640,7 @@ h3{ font-size: 1.3rem; margin-bottom: 14px; }
 
 /* ---------- Portfólio ---------- */
 .portfolio{
+  background: var(--bg-alt);
   padding: 100px 0;
   border-bottom: 1px solid var(--line);
 }
@@ -651,8 +655,12 @@ h3{ font-size: 1.3rem; margin-bottom: 14px; }
 .iv-cta{
   padding: 100px 0;
   border-bottom: 1px solid var(--line);
-  background: var(--bg-alt);
+  background: #ffffff;
+  color: #0a0a0a;
 }
+.iv-cta .eyebrow{ color: rgba(10,10,10,0.55); }
+.iv-cta .section-sub{ color: rgba(10,10,10,0.6); }
+.iv-cta .btn-primary{ background: #0a0a0a; color: #ffffff; }
 .iv-cta-inner{
   max-width: 640px;
   margin-inline: auto;
@@ -661,10 +669,8 @@ h3{ font-size: 1.3rem; margin-bottom: 14px; }
 .iv-cta-inner .eyebrow{ justify-content: center; }
 
 /* ---------- Contato ---------- */
-.contato{ padding: 100px 0; background: #ffffff; color: #0a0a0a; }
+.contato{ padding: 100px 0; }
 .contato-inner{ text-align: center; }
-.contato .eyebrow{ color: rgba(10,10,10,0.55); }
-.contato .section-sub{ color: rgba(10,10,10,0.6); }
 .contato-links{
   display: flex;
   flex-wrap: wrap;
@@ -679,15 +685,14 @@ h3{ font-size: 1.3rem; margin-bottom: 14px; }
   gap: 6px;
   padding: 26px 34px;
   background: #ffffff;
-  border: 1px solid rgba(10,10,10,0.12);
+  border: 1px solid rgba(10,10,10,0.1);
   border-radius: var(--radius);
   min-width: 220px;
-  box-shadow: 0 6px 20px rgba(10,10,10,0.06);
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 .contato-link:hover{
   transform: translateY(-3px);
-  box-shadow: 0 12px 24px rgba(10,10,10,0.16);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.35);
 }
 .contato-icon{
   color: #0a0a0a;
