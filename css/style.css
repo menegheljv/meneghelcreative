@@ -647,6 +647,19 @@ h3{ font-size: 1.3rem; margin-bottom: 14px; }
 }
 .portfolio-inner .eyebrow{ justify-content: center; }
 
+/* ---------- Identidade Visual (CTA) ---------- */
+.iv-cta{
+  padding: 100px 0;
+  border-bottom: 1px solid var(--line);
+  background: var(--bg-alt);
+}
+.iv-cta-inner{
+  max-width: 640px;
+  margin-inline: auto;
+  text-align: center;
+}
+.iv-cta-inner .eyebrow{ justify-content: center; }
+
 /* ---------- Contato ---------- */
 .contato{ padding: 100px 0; background: #ffffff; color: #0a0a0a; }
 .contato-inner{ text-align: center; }
