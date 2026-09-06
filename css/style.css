@@ -384,13 +384,17 @@ h3{ font-size: 1.3rem; margin-bottom: 14px; }
 .sobre-media.is-visible .sobre-photo{
   transform: scale(1);
   opacity: 1;
+  animation: sobre-kenburns 14s ease-in-out 1.2s infinite alternate;
 }
 .sobre-frame:hover .sobre-photo{
   filter: grayscale(0);
-  transform: scale(1.04);
+}
+@keyframes sobre-kenburns{
+  0%{ transform: scale(1); }
+  100%{ transform: scale(1.09); }
 }
 @media (prefers-reduced-motion: reduce){
-  .sobre-photo{ transform: none; opacity: 1; transition: none; }
+  .sobre-photo{ transform: none; opacity: 1; transition: none; animation: none; }
   .sobre-frame:hover .sobre-photo{ transform: none; }
 }
 .sobre-tag{
