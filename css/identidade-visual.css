@@ -46,6 +46,8 @@
 
   #iv-app img{ max-width:100%; display:block; }
   #iv-app a{ color:inherit; }
+  #iv-app a.btn-primary{ background:#f5f5f5; color:#0a0a0a; }
+  #iv-app a.btn-secondary{ color:#f5f5f5; }
   #iv-app h1, #iv-app h2, #iv-app h3, #iv-app h4{ margin:0; text-wrap:balance; font-weight:400; }
   #iv-app p{ margin:0; }
 
