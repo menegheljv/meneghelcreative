@@ -1,14 +1,14 @@
 // Meneghel Creative — script mínimo, sem animações complexas
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", (): void => {
   // Ano dinâmico no rodapé
   const yearEl = document.getElementById("year");
-  if (yearEl) yearEl.textContent = new Date().getFullYear();
+  if (yearEl) yearEl.textContent = String(new Date().getFullYear());
 
   // Animação de entrada da onda (surge da esquerda, mantém sempre a forma da onda)
   // Só dispara depois que a imagem realmente carregou, senão a transição
   // roda "no vazio" enquanto a imagem baixa e o efeito parece cortado.
-  const waveSvg = document.querySelector(".hero-wave-svg");
+  const waveSvg = document.querySelector<HTMLImageElement>(".hero-wave-svg");
   if (waveSvg) {
     const revealWave = () => {
       requestAnimationFrame(() => {
