@@ -39,13 +39,14 @@ Alongside all of this, I founded **[Meneghel Creative](https://menegheljv.github
 
 ## About this repository
 
-This repository also holds the source code for the Meneghel Creative site (plain HTML/CSS/JS, no frameworks), published through GitHub Pages.
+This repository also holds the source code for the Meneghel Creative site, built with Astro and TypeScript and published through GitHub Pages.
 
 ```
-index.html      the single page with every section
-css/style.css   styles
-js/script.js    mobile menu, animations and interactions
-assets/         logo, icons, favicons and photos
+src/pages/      Astro pages, preserving the existing page content
+src/scripts/    typed browser interactions
+public/css/     site styles
+public/assets/  logo, icons, favicons and photos
+.github/workflows/deploy.yml  GitHub Pages deployment
 ```
 
-It publishes automatically at **[menegheljv.github.io/meneghelcreative](https://menegheljv.github.io/meneghelcreative/)** on every push to `main`.
+It publishes automatically at **[menegheljv.github.io/meneghelcreative](https://menegheljv.github.io/meneghelcreative/)** on every push to `main`. The Astro base path is configured as `/meneghelcreative`, and the workflow uses Node 22.

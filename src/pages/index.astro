@@ -1,3 +1,8 @@
+---
+const base = import.meta.env.BASE_URL.endsWith("/")
+  ? import.meta.env.BASE_URL
+  : `${import.meta.env.BASE_URL}/`;
+---
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -6,16 +11,16 @@
 <title>Meneghel Creative | João Victor Meneghel</title>
 <meta name="description" content="Meneghel Creative: cobertura fotográfica e em vídeo de eventos (aniversário infantil, 15 anos, aniversário adulto e casamento). Portfólio e trabalho de João Victor Meneghel.">
 
-<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
-<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href={`${base}assets/favicon-32.png`}>
+<link rel="icon" type="image/png" sizes="16x16" href={`${base}assets/favicon-16.png`}>
+<link rel="apple-touch-icon" href={`${base}assets/apple-touch-icon.png`}>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/identidade-visual.css">
+<link rel="stylesheet" href={`${base}css/style.css`}>
+<link rel="stylesheet" href={`${base}css/identidade-visual.css`}>
 </head>
 <body>
 
@@ -25,7 +30,7 @@
 <header class="site-header" id="top">
   <div class="container header-inner">
     <a href="#top" class="brand">
-      <img src="assets/meneghel-wordmark.png" alt="meneghel creative" class="brand-word">
+      <img src={`${base}assets/meneghel-wordmark.png`} alt="meneghel creative" class="brand-word">
     </a>
     <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -48,7 +53,7 @@
   <section class="hero" id="inicio">
     <div class="container hero-inner">
       <div class="hero-wave" id="heroWave" aria-hidden="true">
-        <img src="assets/meneghel-wave-icon.png" alt="" class="hero-wave-svg">
+        <img src={`${base}assets/meneghel-wave-icon.png`} alt="" class="hero-wave-svg">
       </div>
       <p class="eyebrow">meneghel creative</p>
       <h1>Eternizamos<br>seu <span class="momento-wrap">momento</span>.</h1>
@@ -65,7 +70,7 @@
     <div class="container sobre-grid">
       <div class="sobre-media reveal">
         <div class="sobre-frame">
-          <img src="assets/joao-foto-natural.jpg" alt="João Victor Meneghel" class="sobre-photo">
+          <img src={`${base}assets/joao-foto-natural.jpg`} alt="João Victor Meneghel" class="sobre-photo">
           <span class="sobre-tag">João Victor Meneghel</span>
         </div>
       </div>
@@ -235,7 +240,7 @@
   <div class="symbol-echo" aria-hidden="true"></div>
   <div class="container footer-inner">
     <div class="footer-top">
-      <img src="assets/meneghel-icon.png" alt="" class="footer-icon">
+      <img src={`${base}assets/meneghel-icon.png`} alt="" class="footer-icon">
       <p>&copy; <span id="year"></span> Meneghel Creative. Todos os direitos reservados.</p>
     </div>
   </div>
@@ -262,7 +267,7 @@
 <main>
 
   <section class="cover wrap">
-    <img class="cover-mark" src="assets/meneghel-wave-icon.png" alt="Símbolo Meneghel Creative">
+    <img class="cover-mark" src={`${base}assets/meneghel-wave-icon.png`} alt="Símbolo Meneghel Creative">
     <h1>Sistema de<br><em>marca</em> meneghel<br>creative</h1>
     <p class="cover-sub">Fundamentos e componentes que traduzem "eternizamos seu momento" em cada tela, post e entrega: do logotipo aos botões.</p>
     <div class="cover-meta">
@@ -311,7 +316,7 @@
       </div>
 
       <div class="logo-stage">
-        <img class="symbol" src="assets/meneghel-wave-icon.png" alt="Símbolo — onda M">
+        <img class="symbol" src={`${base}assets/meneghel-wave-icon.png`} alt="Símbolo — onda M">
       </div>
       <div class="logo-caption">
         <span class="name">Símbolo</span>
@@ -319,7 +324,7 @@
       </div>
 
       <div class="logo-stage" style="margin-top:36px;">
-        <img class="wordmark" src="assets/meneghel-wordmark.png" alt="Logotipo — meneghel creative">
+        <img class="wordmark" src={`${base}assets/meneghel-wordmark.png`} alt="Logotipo — meneghel creative">
       </div>
       <div class="logo-caption">
         <span class="name">Assinatura completa</span>
@@ -780,6 +785,7 @@
 
 
 <script>
+// @ts-nocheck
 (function(){
   var canvas = document.getElementById('ivHeroWave');
   if(!canvas) return;
@@ -892,6 +898,7 @@
 
 </div>
 <script>
+// @ts-nocheck
 (function(){
   var siteApp = document.getElementById('site-app');
   var ivApp = document.getElementById('iv-app');
@@ -936,6 +943,6 @@
 </script>
 
 
-<script src="js/script.js"></script>
+<script src="../scripts/site.ts"></script>
 </body>
 </html>

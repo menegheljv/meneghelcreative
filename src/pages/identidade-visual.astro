@@ -1,0 +1,18 @@
+---
+const base = import.meta.env.BASE_URL.endsWith("/")
+  ? import.meta.env.BASE_URL
+  : `${import.meta.env.BASE_URL}/`;
+---
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="refresh" content={`0; url=${base}#identidade-visual`}>
+<link rel="canonical" href={`${base}#identidade-visual`}>
+<title>Meneghel Creative</title>
+<script>location.replace('./#identidade-visual');</script>
+</head>
+<body>
+<p>Redirecionando para <a href={`${base}#identidade-visual`}>a Identidade Visual</a>...</p>
+</body>
+</html>
