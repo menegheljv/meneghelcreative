@@ -12,7 +12,7 @@ I turn public data and audience data into decisions. I've done it at real scale:
 
 ## 📊 Featured project
 
-**[alfredo-chaves-eleicoes-2020-2024](https://github.com/menegheljv/alfredo-chaves-eleicoes-2020-2024)** is a full data pipeline (Python, pandas, SQLite, matplotlib) built on official TSE electoral data. It maps, section by section, how a political group went from losing five elections in a row to winning in 2024: raw voting records, cleaned into datasets, published as a case study report. It's the project I'm proudest of, because it's the same instinct I use in communications work (find the story inside the data) applied with real code.
+**[The Metamorphosis of Power](https://menegheljv.github.io/the-metamorphosis-of-power/)** ([code](https://github.com/menegheljv/the-metamorphosis-of-power)) is a full data pipeline (Python, pandas, SQLite) with interactive charts in TypeScript (React + Recharts) built on official TSE electoral data. It maps, section by section, how a political group went from losing five elections in a row to winning in 2024: raw voting records, cleaned into datasets, published as a bilingual (PT/EN) interactive case study, with a static PDF. It's the project I'm proudest of, because it's the same instinct I use in communications work (find the story inside the data) applied with real code.
 
 ## About
 
