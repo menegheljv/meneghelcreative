@@ -226,16 +226,27 @@ h3{ font-size: 1.3rem; margin-bottom: 14px; }
   width: 100%;
   height: auto;
   display: block;
-  clip-path: inset(0 100% 0 0);
-  transition: clip-path 1.3s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: visible;
 }
-.hero-wave-svg.is-in-view{
-  clip-path: inset(0 0% 0 0);
+/* o M se desenha em traço e depois preenche */
+.hero-wave-svg path{
+  stroke: currentColor;
+  stroke-width: 1.2;
+  stroke-linejoin: round;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  fill: currentColor;
+  fill-opacity: 0;
+  animation: wave-draw 1.8s cubic-bezier(0.65, 0, 0.35, 1) 0.15s forwards,
+             wave-fill 0.9s ease 1.5s forwards;
 }
+@keyframes wave-draw{ to{ stroke-dashoffset: 0; } }
+@keyframes wave-fill{ to{ fill-opacity: 1; } }
 @media (prefers-reduced-motion: reduce){
-  .hero-wave-svg{
-    clip-path: inset(0 0% 0 0) !important;
-    transition: none !important;
+  .hero-wave-svg path{
+    animation: none !important;
+    stroke-dashoffset: 0;
+    fill-opacity: 1;
   }
   .hero h1 span{ animation: none !important; }
 }
