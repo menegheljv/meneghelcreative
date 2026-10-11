@@ -218,7 +218,7 @@ h3{ font-size: 1.3rem; margin-bottom: 14px; }
 
 .hero-wave{
   position: relative;
-  color: var(--white);
+  color: #ffffff;
   width: clamp(200px, 34vw, 480px);
   margin-bottom: 38px;
 }
