@@ -229,19 +229,22 @@ h3{ font-size: 1.3rem; margin-bottom: 14px; }
   display: block;
   overflow: visible;
 }
-/* o M se desenha em traço e depois preenche */
-.hero-wave-svg path{
+/* o M se desenha em traço (preso por dentro do contorno) e depois preenche */
+.hero-wave-svg .wave-fill{
+  fill: currentColor;
+  fill-opacity: 0;
+  animation: wave-fill 0.9s ease 1.5s forwards;
+}
+.hero-wave-svg .wave-line{
+  fill: none;
   stroke: currentColor;
-  stroke-width: 1.2;
+  stroke-width: 2.4;
   stroke-linejoin: round;
   stroke-linecap: round;
   stroke-opacity: 0;
   stroke-dasharray: 1.01 2;
   stroke-dashoffset: 1.01;
-  fill: currentColor;
-  fill-opacity: 0;
   animation: wave-draw 1.8s cubic-bezier(0.65, 0, 0.35, 1) 0.15s forwards,
-             wave-fill 0.9s ease 1.5s forwards,
              wave-stroke-out 0.5s ease 2.2s forwards;
 }
 @keyframes wave-draw{
@@ -252,12 +255,9 @@ h3{ font-size: 1.3rem; margin-bottom: 14px; }
 @keyframes wave-fill{ to{ fill-opacity: 1; } }
 @keyframes wave-stroke-out{ to{ stroke-opacity: 0; } }
 @media (prefers-reduced-motion: reduce){
-  .hero-wave-svg path{
-    animation: none !important;
-    stroke-dashoffset: 0;
-    stroke-opacity: 0;
-    fill-opacity: 1;
-  }
+  .hero-wave-svg .wave-fill, .hero-wave-svg .wave-line{ animation: none !important; }
+  .hero-wave-svg .wave-fill{ fill-opacity: 1; }
+  .hero-wave-svg .wave-line{ stroke-opacity: 0; }
   .hero h1 span{ animation: none !important; }
 }
 .hero h1 span{
